@@ -1,0 +1,19 @@
+/* **************tablet************** */
+
+@media all and (max-width: 980px) {
+    .large-device{
+        display: none;
+    }
+    .small-device{
+        display: initial;
+    }
+    .headline{
+        font-size: 20px;
+    }
+}
+
+/* ************mobile************ */
+
+@media only screen and (max-width: 600px) {
+    
+  }
