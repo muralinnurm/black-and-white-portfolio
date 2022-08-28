@@ -21,6 +21,7 @@ Note: This is style css.
 .btn, .btn:focus{
     padding: 8px 25px;
     border-radius: 0;
+    text-transform: uppercase;
     box-shadow: none !important;
 }
 .btn-primary, .btn-primary:focus{
@@ -56,12 +57,16 @@ Note: This is style css.
 body{
     height: 100rem;
 }
+section{
+    padding: 60px 0;
+    border-bottom: 1px solid var(--black);
+}
 /* *********** navbar style *********** */
 
 nav.navbar{
     border-bottom: 1px solid var(--black);
     padding: 0 0;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(40px);
 }
 a.navbar-brand{
     font-size: 35px;
@@ -91,9 +96,8 @@ a.navbar-brand{
     border-bottom: 1px solid var(--black);
 }
 .hero .row{
-    min-height: 95vh;
+    min-height: 70vh;
     max-height: auto;
-    padding: 50px 0;
 }
 .hero-image{
     text-align: center;
@@ -109,6 +113,7 @@ a.navbar-brand{
     font-size: 30px;
     color: var(--black);
     margin: 20px 0;
+    font-weight: 400;
 }
 
 .last-name{
@@ -125,3 +130,57 @@ a.navbar-brand{
 .small-device{
     display: none;
 }
+
+/* ************ About ************ */
+
+.about-image img{
+    width: 500px;
+}
+.about-details h2{
+    font-weight: 300;
+    color: var(--black);
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 32px;
+}
+.about-details h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #000;
+}
+.about-details h3{
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--black);
+    position: relative;
+    margin-bottom: 40px;
+}
+.about-details h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: block;
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+}
+.about-details p{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--black);
+}
+.about-details h3{
+    margin-top: 40px;
+}
+.about-details a{
+    margin-top: 30px;
+}
+
