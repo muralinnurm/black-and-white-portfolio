@@ -15,5 +15,15 @@
 /* ************mobile************ */
 
 @media only screen and (max-width: 600px) {
-    
-  }
+    .section-title{
+        font-weight: 300;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .portfolio-tabs .nav-pills{
+        width: auto;
+        margin: 0 auto;
+    }
+}
