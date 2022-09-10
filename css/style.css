@@ -48,7 +48,7 @@ body{
     background-color: var(--black);
     border-color: var(--black);
     color: var(--white);
-    transition: all .2s ease-out;
+    transition: all .4s ease-out;
 }
 .btn-primary:hover{
     background-color: var(--transparent);
@@ -60,6 +60,7 @@ body{
     background-color: var(--transparent);
     color: var(--black);
     border: 1px solid var(--black);
+    transition: all .4s ease;
 }
 .btn-secondary:hover{
     background-color: var(--black);
@@ -335,38 +336,6 @@ a.navbar-brand{
 .slede-items{
     padding: 50px 10px;
 }
-.slick-slide{
-    opacity: 40%;
-    margin-top: 36px;
-}
-.slick-slide.slick-active{
-    opacity: 100%;
-    width: 600px;
-    margin-top: 0;
-}
-.slick-slide p{
-    font-size: 13px;
-    line-height: 18px;
-}
-.slick-slide h4{
-    font-size: 20px;
-}
-.slick-slide img{
-    top: -60px;
-    width: 70px;
-}
-.slick-active p{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
-}
-.slick-active h4{
-    font-size: 30px;
-}
-.slick-active img{
-    top: -70px;
-    width: 100px;
-}
 .slider-btn {
     padding: 0px 30px;
     background-color: var(--black);
@@ -380,4 +349,92 @@ a.navbar-brand{
 .slider-btn:hover {
     background-color: var(--transparent);
     color: var(--black);
+}
+
+/* **************** Contact ****************** */
+
+/* ***Left*** */
+
+#contact .card{
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 0;
+    height: 590px;
+    width: 520px;
+}
+.contact-left {
+    color: var(--white);
+    background-color: var(--black);
+}
+.contact-left img{
+    border: 1px solid var(--white);
+    /* border-radius: 10px; */
+    width: 420px;
+}
+.contact-left h4{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: -2px;
+}
+.contact-left span{
+    font-size: 15px;
+    font-weight: 300;
+}
+.contact-left p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.contact-left h6{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* ***right*** */
+.contact-rignt{
+    background-color: var(--transparent) !important;
+    border: 1px solid var(--black);
+}
+.contact-rignt .card-body{
+    width: 100%;
+}
+.form-control{
+    background-color: var(--transparent) !important;
+    border: 1px solid var(--black);
+    border-radius: 0;
+}
+input:focus,textarea:focus{
+    box-shadow: none !important;
+    border: 1px solid var(--black) !important;
+}
+
+/* **************** footer ***************** */
+
+footer{
+    background-color: var(--black);
+    padding: 15px 0;
+}
+.social-links i{
+    background-color: var(--white);
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 25px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    transition: all 1s;
+}
+.social-links i:hover{
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+    transform: rotate( 360deg);
+}
+footer p{
+    color: var(--white);
+    margin: 0 !important;
 }
